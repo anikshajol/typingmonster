@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <ul>
+        <li>
+          <a href="#storage"
+            >What is the Difference Between Local Storage, Session Storage?</a
+          >
+        </li>
+
+        <li>
+          <a href="#scope"
+            >What is difference between global scope and block scope?
+          </a>
+        </li>
+
+        <li><a href="#">Undefined</a></li>
+        <li><a href="#">How does the Event Loop works in JavaScript?</a></li>
+      </ul>
+    </header>
+
+    <!-- Answer of question -->
+
+    <main>
+      <section id="storage">
+        <h2>The localStorage</h2>
+        <p>
+          The localStorage object stores the data with no expiration date. The
+          data will not be deleted when the browser is closed, and will be
+          available the next day, week, or year.
+        </p>
+        <h2>The sessionStorage</h2>
+        <p>
+          The sessionStorage object is equal to the localStorage object, except
+          that it stores the data for only one session. The data is deleted when
+          the user closes the specific browser tab.
+        </p>
+      </section>
+
+      <section id="scope">
+        <h2>Block Scope</h2>
+        <p>
+          Before ES6 (2015), JavaScript had only Global Scope and Function
+          Scope. ES6 introduced two important new JavaScript keywords: let and
+          const. These two keywords provide Block Scope in JavaScript.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

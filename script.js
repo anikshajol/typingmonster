@@ -7,7 +7,7 @@ const modalBackground = document.getElementById("modal-background");
 
 // variables
 let userText = "";
-let errorCount = 0;
+let errorCount = length;
 let startTime;
 let questionText = "";
 
@@ -68,6 +68,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
+  
 
   // show result modal
   resultModal.innerHTML = "";
@@ -77,6 +78,7 @@ const gameOver = () => {
   display.innerHTML = "";
   // make it inactive
   display.classList.add("inactive");
+ 
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
@@ -127,7 +129,7 @@ const start = () => {
 
 
 // START Countdown
-startBtn.addEventListener("click", start());
+startBtn.addEventListener("click", start);
 
 // If history exists, show it
 displayHistory();
